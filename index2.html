@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Weather App_v1.0</title>
+</head>
+<body>
+    <div class="project_2">
+        <form id="search_form">
+            <input type="search" id="search_inp" placeholder="Enter the city" autocomplete="off" required>
+            <button id="search_btn">Search</button>
+        </form>
+        <div class="app_container">
+            <h1 id="place"></h1>
+            <div class="temp">
+                <img id="temp_icon" src="./icons/sun1.svg" alt="">
+                <h2><span id="temp_val"></span><span id="temp_unit">&#17</span>C</h2>
+                <!-- <h2 id="describe"></h2> -->
+            </div>
+            <h2 id="details"></h2>
+        </div>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
