@@ -41,6 +41,9 @@ body{
     width: 15%;
     border: 2px solid #fff;
 }
+#search_form button:focus{
+    outline: none;
+}
 #search_form button:hover{
     transition: .5s ease-in-out;
     background: #fff;
@@ -77,4 +80,45 @@ body{
 }
 .app_container #temp_unit{
     padding-left: .5rem;
+}
+@media screen and (max-width: 768px){
+    #search_form input{
+        width: 70%;
+    }
+    #search_form button{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 590px) {
+    #search_form{
+        width: 90%;
+    }
+    #search_form input {
+        width: 67%;
+    }
+    #search_form button {
+        width: 100px;
+    }
+    .app_container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+    #search_form {
+        width: 90%;
+    }
+    #search_form input {
+        font-size: 1rem;
+        height: 25px;
+        padding: 15px 10px;
+        width: 67%;
+    }
+    #search_form button {
+        width: 80px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .app_container {
+        width: 100%;
+    }
 }
